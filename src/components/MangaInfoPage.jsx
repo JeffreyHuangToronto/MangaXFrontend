@@ -6,9 +6,7 @@ const MangaInfoPage = (props) => {
   const [cover, setCover] = React.useState();
 
   React.useEffect(() => {
-    fetch(
-      `https://f1ae-184-148-35-66.ngrok.io/api/getMangaInfo/${params.mangaid}`
-    )
+    fetch(`https://mangaxapp.herokuapp.com/api/getMangaInfo/${params.mangaid}`)
       .then((res) => res.json())
       .then((data) => {
         setManga(data.data);

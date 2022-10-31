@@ -9,7 +9,7 @@ const Home = () => {
   const [data, setData] = React.useState(null);
 
   useEffect(() => {
-    fetch(`https://f1ae-184-148-35-66.ngrok.io/api/getshowcase`)
+    fetch(`https://mangaxapp.herokuapp.com/api/getshowcase`)
       .then((res) => res.json())
       .then((data) => {
         setData(data.data);
