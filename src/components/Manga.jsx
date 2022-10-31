@@ -22,7 +22,7 @@ const MangaPlaceholder = (props) => {
             >
               <p className={styles.covertitle}>{mangaTitle}</p>
             </article> */}
-            <img src={imgLink} alt="manga_image" />
+            <img crossorigin="anonymous" src={imgLink} alt="manga_image" />
             {/* <p>{mangaTitle}</p> */}
           </div>
         </Link>
