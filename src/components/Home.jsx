@@ -7,9 +7,9 @@ import Manga from "./Manga";
 
 const Home = () => {
   const [data, setData] = React.useState(null);
-  console.log("ENV URL", process.env.APIURL);
+
   useEffect(() => {
-    fetch(`/api/getshowcase`)
+    fetch(`https://f1ae-184-148-35-66.ngrok.io/api/getshowcase`)
       .then((res) => res.json())
       .then((data) => {
         setData(data.data);
